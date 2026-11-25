@@ -11,14 +11,14 @@ class HomePage extends StatelessWidget {
       ),
       body: ListView(
         padding: const EdgeInsets.all(24),
-        children: [
-          const Icon(
+        children: const [
+          Icon(
             Icons.home,
             size: 80,
             color: Colors.indigo,
           ),
-          const SizedBox(height: 16),
-          const Text(
+          SizedBox(height: 16),
+          Text(
             'Welcome, Melchor!',
             textAlign: TextAlign.center,
             style: TextStyle(
@@ -26,15 +26,15 @@ class HomePage extends StatelessWidget {
               fontWeight: FontWeight.bold,
             ),
           ),
-          const SizedBox(height: 12),
-          const Text(
+          SizedBox(height: 12),
+          Text(
             'Use the navigation bar below to explore the app.',
             textAlign: TextAlign.center,
           ),
-          const SizedBox(height: 24),
+          SizedBox(height: 24),
           Card(
             child: Column(
-              children: const [
+              children: [
                 ListTile(
                   leading: Icon(Icons.calculate),
                   title: Text('Calculator'),
